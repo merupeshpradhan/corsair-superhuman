@@ -28,7 +28,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col" cz-shortcut-listen="true"><AuthProvider>{children}</AuthProvider></body>
+      <body className="min-h-full flex flex-col" cz-shortcut-listen="true">
+        <AuthProvider>{children}</AuthProvider>
+      </body>
     </html>
   );
 }
